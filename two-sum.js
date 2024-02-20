@@ -4,7 +4,7 @@ const twoSum = [5, 6, 6, 1, 3, 55];
 const twoSumAlgo = (param, target) => {
   let arrLength = param.length - 1;
 
-  for (let i = 0; i < arrLength; i++) {
+  for (let i = 0; i <= arrLength; i++) {
     for (let j = i + 1; j < arrLength; j++) {
       if (param[i] + param[j] === target) {
         return [param[i], param[j]];
@@ -20,7 +20,7 @@ const twoSumAlgoHash = (param, target) => {
   let arrLength = param.length - 1;
   const foundValue = {};
 
-  for (let i = 0; i < arrLength; i++) {
+  for (let i = 0; i <= arrLength; i++) {
     const compliment = target - param[i]; //6-> 5
     if (compliment in foundValue) {
     
